@@ -12,6 +12,7 @@
 :-------------------------:
 | electron-admin-antd-vue-v1.0.0-win32-ia32-setup.exe [Github](https://github.com/lqsong/electron-admin-antd-vue/releases) [Gitee](https://gitee.com/lqsong/electron-admin-antd-vue/releases)  |
 | electron-admin-antd-vue-v1.0.0-win32-x64-setup.exe [Github](https://github.com/lqsong/electron-admin-antd-vue/releases) [Gitee](https://gitee.com/lqsong/electron-admin-antd-vue/releases) |
+| electron-admin-antd-vue-v1.0.0-mac.dmg [Github](https://github.com/lqsong/electron-admin-antd-vue/releases) [Gitee](https://gitee.com/lqsong/electron-admin-antd-vue/releases) |
 
 
 |图片预览|
