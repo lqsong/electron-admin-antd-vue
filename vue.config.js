@@ -114,22 +114,25 @@ module.exports = {
                     ]
                 },
                 mac: { // mac
-                    icon: "./build/icons/icon.icns"
+                    icon: "./build/icons/icon.icns",
+                    artifactName: '${productName}-v${version}-mac.${ext}'
                 },
                 win: { // win 相关配置
                     icon: './build/icons/icon.ico',
+                    artifactName: '${productName}-v${version}-win32-setup.${ext}',
                     target: [
                         {
                           target: "nsis", // 利用nsis制作安装程序
                           arch: [ // 这个意思是打出来32 bit + 64 bit的包，但是要注意：这样打包出来的安装包体积比较大，所以建议直接打32的安装包。
-                            "x64",
-                            // "ia32"
+                            // "x64",
+                            "ia32"
                           ]
                         }
                       ]
                 },
                 linux: {
-                    icon: "./build/icons"
+                    icon: "./build/icons",
+                    artifactName: '${productName}-v${version}-linux.${ext}'
                 }
             }
         }
