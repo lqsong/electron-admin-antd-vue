@@ -67,14 +67,13 @@
     </div>
 </template>
 <script lang="ts">
-import { defineComponent, reactive, ref } from "vue";
+import { defineComponent, reactive, ref, Ref } from "vue";
 import { useStore } from "vuex";
 
 import { Props, validateInfos } from 'ant-design-vue/lib/form/useForm';
 import { message, Form } from 'ant-design-vue';
 const useForm = Form.useForm;
 
-import useI18nAntdFormVaildateInfos from "@/composables/useI18nAntdFormVaildateInfos";
 import { FormDataType } from "./data.d";
 import { StateType as FormStateType } from "./store";
 
@@ -82,7 +81,7 @@ interface FormBasicPageSetupData {
     resetFields: (newValues?: Props) => void;
     validateInfos: validateInfos;
     modelRef: FormDataType;
-    submitLoading: boolean;
+    submitLoading: Ref<boolean>;
     handleSubmit: (e: MouseEvent) => void;
 }
 
@@ -160,9 +159,9 @@ export default defineComponent({
 
         return {
             resetFields,
-            validateInfos: validateInfos as unknown as validateInfos,
+            validateInfos,
             modelRef,
-            submitLoading: submitLoading as unknown as boolean,
+            submitLoading,
             handleSubmit,
         }
 
