@@ -22,7 +22,7 @@ export const antdMessages: { [key: string]: any} = {
 /**
  * 框架 多语言 配置
  */
-export const messages = importAllLocales();
+export const messages = importAllLocales() as any;
 const sysLocale = getLocale();
 const i18n = createI18n({
     legacy: false,
