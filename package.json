@@ -70,6 +70,9 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
+  "resolutions": {
+    "vue-cli-plugin-electron-builder/electron-builder": "^23.0.3"
+  },
   "keywords": [
     "electron",
     "vue",
